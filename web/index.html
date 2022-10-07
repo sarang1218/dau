@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="이사랑" />
+    <mata name="keywords" content="빅데이터, django, python" />
+    <title>Welcome to Lee Sarang Mall</title>
+    <script src="https://kit.fontawesome.com/f439495281.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            font-family:"맑은 고딕", Arial, Helvetica, sans-serif;
+            line-height: 150%;
+        }
+        header h1{
+            display: inline;
+            font-size: 1.2em;
+        }
+        ul{
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        nav ul {
+            border-top: 2px solid rgb(111, 170, 99);
+            border-bottom: 2px solid rgb(111, 170, 99);
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav ul li{
+            display: inline;
+            padding: 15px 20px;
+            letter-spacing: 5px;
+        }
+        nav ul li:hover{
+            background-color: rgb(111, 170, 99);
+        }
+        .photo > img {
+            padding-top: 50px;
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+        }
+        table th{
+            background-color: rgb(111, 170, 99);
+        }
+        table{
+            width: 90%;
+            margin: 0 auto;
+            font-size: 1.2em;
+        }
+        .right {
+            margin-top: 30px;
+        }
+        body{
+            margin: 0 auto;
+            width: 80vw;
+            background-color: azure;
+        }
+        header, footer{
+            height: 100px;
+            font-size: 1.4em;
+        }
+        nav{
+            height: 50px;
+        }
+        section{
+            display: flex;
+        }
+        .content{
+            flex: 4;
+        }
+        aside{
+            flex: 1;
+        }
+        footer{
+            background-color: darkgray;
+            color: whitesmoke;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="home">
+    <i class="fa-solid fa-burger"></i>
+    <h1> Sarang Site</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">쇼핑몰</a></li>
+            <li><a href="#">패키지</a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="./gallery.html">갤러리</a></li>
+        </ul>
+    </nav>
+    <section>
+    <div class="content">
+        <article>
+            <div class="photo"> <!-- . = class, # = id -->
+                <img src="./images/bigdata.jpg" alt="bigtata 이미지">
+            </div>
+        <div class="action">
+            <h2>대외활동리스트</h2>
+            <table>
+                <tr>
+                    <th>기간</th>
+                    <th>대외활동</th>
+                    <th>주최</th>
+                </tr>
+                <tr>
+                    <td>2021.3.</td>
+                    <td>마케팅전략 경진대회</td>
+                    <td>정보시스템학회</td>
+                </tr>
+                <tr>
+                    <td>2022.05.</td>
+                    <td>롯데 빅데이터 경진대회</td>
+                    <td>롯데그룹</td>
+                </tr>
+                <tr>
+                    <td>2022.08.</td>
+                    <td>머신러닝 교육프로그램</td>
+                    <td>동아대학교</td>
+                </tr>
+            </table>
+        </div>
+        </article>
+        <br><br>
+        <article>
+            <div class="media">
+                <h2>좋아하는 음악</h2>
+                <audio src="./media/music01.mp3" controls></audio>
+                <br>
+                <h2>북극곰을 살리자</h2>
+                <video src="./media/movie.mp4" controls width="50%"></video>
+                <h2>휘성의 결혼까지 생각했어</h2>
+                <iframe width="933" height="525" src="https://www.youtube.com/embed/xVU-UUKHYeQ" title="휘성 파이널 라운드 미션곡, '결혼까지 생각했어'♬ - 히든싱어2 9회 [휘성 편]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
+        <article>
+            <div class="gallery">
+                <iframe src="./gallery.html" width="60%" height="300" frameborder="0"></iframe>
+            </div>
+        </article>
+        </div>
+        <aside class="right">
+            <div class="login">
+                <h2>로그인</h2>
+                <form action="#" method="post">
+                    회원ID : <input type="text" name="id" id=""><br>
+                    비밀번호 : <input type="password" name="pw" id=""><br>
+                    <input type="submit" value="제출">
+                    <input type="button" value="회원가입">
+                </form>
+            </div>
+            <div class="bookmark">
+                <h2>북마크</h2>
+                <a href="http://mis.donga.ac.kr" target="_blank">경영정보학과</a><br>
+                <a href="./gallery.html">갤러리</a><br>
+                <a href="#home">홈이동</a><br>
+            </div>
+        </aside>
+    </section>
+    <footer>
+        copyright@황성원
+        <div class="sns">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+    </footer>
+</body>
+</html>
